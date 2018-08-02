@@ -2,6 +2,7 @@
 body{
   font-size: 0.37rem;
   font-family: PingFang-SC-Regular;
+  background-color: #f2f2f2
 }
 .pic{
   background: url('./img/pic.png') no-repeat center;
@@ -9,17 +10,17 @@ body{
   width: 0.56rem;
   height: 0.56rem;
 }
-.left {
+  .left {
   margin-top: 0.43rem;
   float: left;
   margin-left: 0.426rem;
-}
-.right {
+  }
+  .right {
   float: left;
   margin-top: 0.43rem;
   margin-right: 0.426rem;;
   transform: rotateY(180deg);
-}
+  }
 .changLanguage{
   position: relative;
   width: 2.96rem;
@@ -28,7 +29,6 @@ body{
   float: left;
   background-color: #4f4f4f;
   border-radius: 0.41rem;
-  
 }
 .changLanguage .Chinese-on{
   font-size: 0.3rem;
@@ -43,11 +43,10 @@ body{
   position: absolute;
   z-index: 1;
   cursor: pointer;
-  transition: 0.3s
 }
 .changLanguage .English{
   font-size: 0.3rem;
-  width: 2.29rem;
+  width: 2rem;
   height: 0.83rem;
   background-color: #4f4f4f;
   border-radius: 0.41rem;
@@ -56,7 +55,7 @@ body{
   position: absolute;
   left: 1.01rem;
   text-align: right;
-  padding-right: 0.51rem;
+  padding-right: 0.4rem;
   cursor: pointer;
 }
 .changLanguage .Chinese{
@@ -72,7 +71,7 @@ body{
 }
 .changLanguage .English-on{
   font-size: 0.3rem;
-  width: 2.29rem;
+  width: 2rem;
   height: 0.83rem;
   background-color: #000;
 	box-shadow: 0px 6px 4px 0px 
@@ -91,7 +90,6 @@ body{
   border-top: none;
   border-bottom: none;
   margin: 0 0.426rem;
-  
 }
 .line .logo{
   background: url('./img/logo.png') no-repeat center;
@@ -115,7 +113,7 @@ body{
   width: 7.84rem;
   margin-top: 0.49rem;
 }
-hr{
+.line hr{
   background-color: #e1e1e1;
   height:1px ;
   border: none;
@@ -127,37 +125,38 @@ input{
   border: 0px;
   vertical-align: text-bottom;
   margin-right: 0.16rem;
- 
 }
 
-ol {
+.line ol {
   margin:0 0.64rem 0.53rem 0.64rem;
 }
-ol li{
+.line ol li{
   margin-bottom: 0.35rem
 }
-ol>li>h2 {
+.line ol>li>h2 {
   line-height: 0.64rem;
   color: #333333;
 }
-ol>li>h2>span{
+.line ol>li>h2>span{
   color: #c82249;
 }
-ol>li>p {
+.line ol>li>p {
   line-height: 0.8rem;
   margin-top: 0.1rem;
   color: #333333;
 }
-textarea{
+.line ol>li textarea{
   margin-top: 0.265rem;
   border:0.027rem solid #a0a0a0;
   background-color: #e5e5e5;
   border-radius:0.053rem;
   padding: 0.37rem 0.41rem;
   margin-bottom: 0.2rem;
-  font-size: 0.37rem
+  font-size: 0.37rem;
+  width: 7.86rem;
+  height: 2.4rem;
 }
-ol li:nth-child(8) input{
+.line ol li:nth-child(8) input{
   background-color: #e6e6e6;
 	border-radius: 0.373rem;
   border: solid 0.027rem #a0a0a0;
@@ -166,19 +165,20 @@ ol li:nth-child(8) input{
   margin-bottom: 0.12rem;
   padding:0 0.5rem;
   vertical-align:top;
-  margin-right: 0
+  margin-right: 0;
+  font-size: 0.37rem;
 }
 ol li:nth-child(8){
   margin-bottom: 0
 }
-h6{
+.line ol h6{
   font-size: 0.32rem;
 	color: #666666;
   opacity: 0.6;
   text-align: center;
   margin: 0.15rem 0 0.25rem 0
 }
-.btn-sub{
+.line ol .btn-sub{
   width: 7.87rem;
 	height: 1.173rem;
 	background-image: linear-gradient(0deg, 
@@ -211,3 +211,7 @@ h6{
   margin-top: -0.2rem;
   margin-bottom: 0.2rem
 }
+
+
+
+
