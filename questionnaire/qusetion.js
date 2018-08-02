@@ -1,9 +1,10 @@
-
-
-
-var zw = document.getElementsByClassName('Chinese-on')
-var eng = document.getElementsByClassName('English')
-eng.onclick = function(){
-  zw.className = ('Chinese')
-  eng.className = ('English-on')
+/*中英文切换*/
+var btn = document.getElementsByTagName('button')
+btn[0].onclick = function () {
+  btn[0].className = 'Chinese';
+  btn[1].className = ('English-on')
+}
+btn[1].onclick = function () {
+  btn[0].className = 'Chinese-on'; 
+  btn[1].className = ('English')
 }

@@ -1,6 +1,7 @@
 
 body{
   font-size: 0.37rem;
+  font-family: PingFang-SC-Regular;
 }
 .pic{
   background: url('./img/pic.png') no-repeat center;
@@ -20,8 +21,6 @@ body{
   transform: rotateY(180deg);
 }
 .changLanguage{
-  font-size: 0.3rem;
-  font-family: PingFang-SC-Regular;
   position: relative;
   width: 2.96rem;
   height: 0.83rem;
@@ -29,9 +28,10 @@ body{
   float: left;
   background-color: #4f4f4f;
   border-radius: 0.41rem;
-  cursor: pointer;
+  
 }
 .changLanguage .Chinese-on{
+  font-size: 0.3rem;
   width: 1.3rem;
   height: 0.83rem;
   background-color: #000;
@@ -42,8 +42,11 @@ body{
   color: #fff;
   position: absolute;
   z-index: 1;
+  cursor: pointer;
+  transition: 0.3s
 }
 .changLanguage .English{
+  font-size: 0.3rem;
   width: 2.29rem;
   height: 0.83rem;
   background-color: #4f4f4f;
@@ -51,11 +54,13 @@ body{
   border: none;
   color: #9c9c9c;
   position: absolute;
-  left: 0.65rem;
+  left: 1.01rem;
   text-align: right;
-  padding-right: 0.31rem;
+  padding-right: 0.51rem;
+  cursor: pointer;
 }
 .changLanguage .Chinese{
+  font-size: 0.3rem;
   width: 1.3rem;
   height: 0.83rem;
   position: absolute;
@@ -63,8 +68,10 @@ body{
   border-radius: 0.41rem;
   border: none;
   color: #9c9c9c;
+  cursor: pointer;
 }
 .changLanguage .English-on{
+  font-size: 0.3rem;
   width: 2.29rem;
   height: 0.83rem;
   background-color: #000;
@@ -77,6 +84,7 @@ body{
   text-align: center;
   left: 1.01rem;
   position: absolute;
+  cursor: pointer;
 }
 .line{
   border: 1px solid #e1e1e1;
@@ -97,13 +105,10 @@ body{
 .line h1{
   font-size: 0.48rem;
   margin-top: 0.25rem;
-  font-family: PingFang-SC-Medium;
   color: #333333;
   text-align: center;
 }
 .line .illustrate{
-  font-family: PingFang-SC-Regular;
-	font-size: 0.37rem;
 	line-height: 0.64rem;
   color: #666666;
   margin: 0 auto;
@@ -116,6 +121,15 @@ hr{
   border: none;
   margin: 0.3rem 0.64rem 0.53rem 0.64rem;
 }
+input{
+  width: 0.48rem;
+  height: 0.48rem;
+  border: 0px;
+  vertical-align: text-bottom;
+  margin-right: 0.16rem;
+ 
+}
+
 ol {
   margin:0 0.64rem 0.53rem 0.64rem;
 }
@@ -123,18 +137,16 @@ ol li{
   margin-bottom: 0.35rem
 }
 ol>li>h2 {
-  font-size: 0.373rem;
   line-height: 0.64rem;
   color: #333333;
-  font-family: PingFang-SC-Regular;
 }
 ol>li>h2>span{
   color: #c82249;
-  font-size: 0.373rem;
 }
 ol>li>p {
   line-height: 0.8rem;
-  margin-top: 0.1rem
+  margin-top: 0.1rem;
+  color: #333333;
 }
 textarea{
   margin-top: 0.265rem;
@@ -142,4 +154,60 @@ textarea{
   background-color: #e5e5e5;
   border-radius:0.053rem;
   padding: 0.37rem 0.41rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.37rem
+}
+ol li:nth-child(8) input{
+  background-color: #e6e6e6;
+	border-radius: 0.373rem;
+  border: solid 0.027rem #a0a0a0;
+  width: 6.52rem;
+  height: 0.75rem;
+  margin-bottom: 0.12rem;
+  padding:0 0.5rem;
+  vertical-align:top;
+  margin-right: 0
+}
+ol li:nth-child(8){
+  margin-bottom: 0
+}
+h6{
+  font-size: 0.32rem;
+	color: #666666;
+  opacity: 0.6;
+  text-align: center;
+  margin: 0.15rem 0 0.25rem 0
+}
+.btn-sub{
+  width: 7.87rem;
+	height: 1.173rem;
+	background-image: linear-gradient(0deg, 
+		#000000 0%, 
+		#323232 100%), 
+	linear-gradient(
+		#000000, 
+		#000000);
+	background-blend-mode: normal, 
+		normal;
+	box-shadow: 0px 1px 2px 0px 
+		rgba(0, 0, 0, 0.65);
+	border-radius: 0.133rem;
+  border: solid 1px #000000;
+  font-size: 0.48rem;
+  color: #fff;
+  cursor: pointer;
+}
+.left_2 {
+  float: left;
+  margin-left: 0.426rem;
+  transform: rotateX(180deg);
+  margin-top: -0.2rem;
+  margin-bottom: 0.2rem
+}
+.right_2 {
+  float: right;
+  margin-right: 0.426rem;;
+  transform: rotateY(180deg) rotateX(180deg);
+  margin-top: -0.2rem;
+  margin-bottom: 0.2rem
 }
