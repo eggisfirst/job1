@@ -47,7 +47,7 @@ sub.onclick = function () {
   
 
  
-  location.href = adress1 + 'thanks.html'
+  location.href = adress1 +'/'+'thanks.html'
 
 }
 /*遍历所有必填题目*/
