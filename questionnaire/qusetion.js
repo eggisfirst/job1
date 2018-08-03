@@ -8,4 +8,10 @@ btn[0].onclick = function () {
   btn[0].className = 'Chinese-on'; 
   btn[1].className = ('English')
 }
-
+/*点击文字隐藏*/
+var push = document.getElementsByClassName('inputText')
+var textBox = document.getElementsByClassName('mutiLine')
+textBox[0].onclick = function () {
+  push[0].className = 'inputText1';
+  
+}

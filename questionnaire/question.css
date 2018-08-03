@@ -119,14 +119,74 @@ body{
   border: none;
   margin: 0.3rem 0.64rem 0.53rem 0.64rem;
 }
-input{
+/*label更改按钮样式*/
+.radio1 [type='radio']{
+  display: none
+}
+.radio1 label{
+  display: inline-block;
+  position: relative;
   width: 0.48rem;
   height: 0.48rem;
-  border: 0px;
+  border: 1px #a0a0a0 solid;
+  background-color: #f2f2f2;
   vertical-align: text-bottom;
+  cursor: pointer;
+  border-radius: 100%;
   margin-right: 0.16rem;
 }
-
+.radio1 label:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.11rem;
+  margin-left: -0.11rem;
+  width: 0.23rem;
+  height: 0.23rem;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.radio1 [type = 'radio']:checked + label {
+    background-color: #000;
+  }
+  .radio1 [type = 'radio']:checked + label:after{
+    transform:scale(1)
+  }
+  .checkbox1 [type='checkbox']{
+    display: none
+  }
+  .checkbox1 label{
+    display: inline-block;
+    position: relative;
+    width: 0.453rem;
+    height: 0.453rem;
+    border: 1px #a0a0a0 solid;
+    background-color: #f2f2f2;
+    margin-right:  0.16rem;
+    cursor: pointer;
+    border-radius: 0.053rem;
+    overflow :hidden;
+  }
+  .checkbox1 label:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.09rem;
+    margin-left: -0.09rem;
+    width: 0.18rem;
+    height: 0.18rem;
+    background-color: #f2f2f2;
+    transform: scale(0)
+  }
+  .checkbox1 [type = 'checkbox']:checked + label {
+      background-color: #000;
+    }
+  .checkbox1 [type = 'checkbox']:checked + label:after{
+      transform:scale(1)
+    }
 .line ol {
   margin:0 0.64rem 0.53rem 0.64rem;
 }
@@ -140,21 +200,31 @@ input{
 .line ol>li>h2>span{
   color: #c82249;
 }
-.line ol>li>p {
+.line ol>li {
   line-height: 0.8rem;
   margin-top: 0.1rem;
   color: #333333;
 }
-.line ol>li textarea{
-  margin-top: 0.265rem;
-  border:0.027rem solid #a0a0a0;
-  background-color: #e5e5e5;
-  border-radius:0.053rem;
-  padding: 0.37rem 0.41rem;
-  margin-bottom: 0.2rem;
-  font-size: 0.37rem;
-  width: 7.86rem;
-  height: 2.4rem;
+.line ol>li .mutiLine{
+    width: 7.86rem; 
+    height: 2.4rem; 
+    margin-top: 0.265rem;
+    border:0.027rem solid #a0a0a0;
+    background-color: #e5e5e5;
+    border-radius:0.053rem;
+    padding: 0.37rem 0.41rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.37rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.line ol>li .mutiLine .inputText{
+  line-height: 0.64rem;
+  color: #666666;
+  font-style: 0.37rem;
+}
+.line ol>li .mutiLine .inputText1{
+  display: none
 }
 .line ol li:nth-child(8) input{
   background-color: #e6e6e6;
@@ -211,7 +281,6 @@ ol li:nth-child(8){
   margin-top: -0.2rem;
   margin-bottom: 0.2rem
 }
-
 
 
 
