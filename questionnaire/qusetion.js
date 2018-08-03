@@ -9,13 +9,13 @@ btn[0].onclick = function () {
   btn[1].className = ('English')
 }
 /*点击文字隐藏*/
-var push = document.getElementsByClassName('inputText')
+var pushText = document.getElementsByClassName('inputText')
 var textBox = document.getElementsByClassName('mutiLine')
 textBox[0].onclick = function () {
-  push[0].className = 'inputText1';
+  pushText[0].className = 'inputText1';
 }
 
-/*点击跳转到第二个页面*/
+/*点击必填没有填弹出提示，全部填好跳转到第二个页面*/
 var sub = document.getElementsByClassName('btn-sub')[0]
 var adress = location.href
 var len = adress.length
@@ -34,21 +34,21 @@ var addTips = `<div class = tips >这道题必填哦！</div>`
 
 
 sub.onclick = function () {
-for(var i = 0;i < input.length-2;i ++){
-  if(input[i].checked == false){
-    h[i].innerHTML += addTips;
-    break
-    i = i
-  }else{
+// for(var i = 0;i < input.length-2;i ++){
+//   if(input[i].checked == false){
+//     h[i].innerHTML += addTips;
+//     break
+//     i = i
+//   }else{
 
-  }
-}
+//   }
+// }
 
   
 
  
-//   location.href = adress1 + 'thanks.html'
-// }
+  location.href = adress1 + 'thanks.html'
+
 }
 /*遍历所有必填题目*/
 
