@@ -123,7 +123,7 @@ body{
 .radio1 [type='radio']{
   display: none
 }
-.radio1 label{
+.radio1 label {
   display: inline-block;
   position: relative;
   width: 0.48rem;
@@ -135,7 +135,7 @@ body{
   border-radius: 100%;
   margin-right: 0.16rem;
 }
-.radio1 label:after{
+.radio1 label:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -212,11 +212,13 @@ body{
     border:0.027rem solid #a0a0a0;
     background-color: #e5e5e5;
     border-radius:0.053rem;
-    padding: 0.37rem 0.41rem;
+    padding: 0.2rem 0.41rem;
     margin-bottom: 0.2rem;
     font-size: 0.37rem;
     overflow-x: hidden;
     overflow-y: auto;
+    line-height: 0.64rem;
+    word-break : break-all;
 }
 .line ol>li .mutiLine .inputText{
   line-height: 0.64rem;
@@ -266,6 +268,8 @@ ol li:nth-child(8){
   font-size: 0.48rem;
   color: #fff;
   cursor: pointer;
+  text-align: center;
+  line-height: 1.173rem
 }
 .left_2 {
   float: left;
@@ -282,5 +286,14 @@ ol li:nth-child(8){
   margin-bottom: 0.2rem
 }
 
+.tips{
+  width: 3.73rem;
+	height: 0.48rem;
+	background-color: #b01f42;
+  border-radius: 0.24rem;
+	line-height: 0.48rem;
+  color: #fff;
+  text-align: center;
+  }
 
 
