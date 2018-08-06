@@ -22,9 +22,6 @@ var len = adress.length
 var cut = len - 14
 var adress1 = adress.slice(0,cut)
 
-
-
-
 var i = 0;
 var li = document.getElementsByTagName('li');
 var input = document.getElementsByTagName('input')
@@ -34,20 +31,20 @@ var addTips = `<div class = tips >这道题必填哦！</div>`
 
 
 sub.onclick = function () {
-// for(var i = 0;i < input.length-2;i ++){
-//   if(input[i].checked == false){
-//     h[i].innerHTML += addTips;
-//     break
-//     i = i
-//   }else{
+for(var i = 0;i < input.length-2;i ++){
+  if(input[i].checked == false){
+    h[i].innerHTML += addTips;
+    break
+    i = i
+  }else{
 
-//   }
-// }
+  }
+}
 
   
 
  
-  location.href = adress1 +'/'+'thanks.html'
+  // location.href = adress1 +'/'+'thanks.html'
 
 }
 /*遍历所有必填题目*/
