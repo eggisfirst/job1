@@ -1,0 +1,308 @@
+
+body{
+  font-size: 0.37rem;
+  font-family: PingFang-SC-Regular;
+  background: url("./img/bg.jpg")  center fixed;
+  background-position:right top;
+  background-size: 100%;
+  max-width: 1000px;
+  margin: 0 auto
+}
+#wrapper{
+ background-color: #f2f2f2;
+}
+.banner{
+  position: relative;
+}
+.pic{
+  background: url('./img/pic.png') no-repeat center;
+  background-size: cover;
+  width: 0.56rem;
+  height: 0.56rem;
+  position: absolute
+}
+  .left {
+  top: 0.43rem;
+  left: 0.426rem;
+  }
+  .right {
+  top: 0.43rem;
+  right: 0.426rem;;
+  transform: rotateY(180deg);
+  }
+.changLanguage{
+  position: relative;
+  width: 2.96rem;
+  height: 0.83rem;
+  margin: 0.43rem 2.53rem 0 3.52rem;
+  float: left;
+  background-color: #4f4f4f;
+  border-radius: 0.41rem;
+}
+.changLanguage .Chinese-on{
+  font-size: 0.3rem;
+  width: 1.3rem;
+  height: 0.83rem;
+  background-color: #000;
+	box-shadow: 0px 6px 4px 0px 
+		rgba(0, 0, 0, 0.1);
+  border-radius: 0.41rem;
+  border: none;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+.changLanguage .English{
+  font-size: 0.3rem;
+  width: 2rem;
+  height: 0.83rem;
+  background-color: #4f4f4f;
+  border-radius: 0.41rem;
+  border: none;
+  color: #9c9c9c;
+  position: absolute;
+  left: 1.01rem;
+  text-align: right;
+  padding-right: 0.4rem;
+  cursor: pointer;
+}
+.changLanguage .Chinese{
+  font-size: 0.3rem;
+  width: 1.3rem;
+  height: 0.83rem;
+  position: absolute;
+  background-color: #4f4f4f;
+  border-radius: 0.41rem;
+  border: none;
+  color: #9c9c9c;
+  cursor: pointer;
+}
+.changLanguage .English-on{
+  font-size: 0.3rem;
+  width: 2rem;
+  height: 0.83rem;
+  background-color: #000;
+	box-shadow: 0px 6px 4px 0px 
+		rgba(0, 0, 0, 0.1);
+  border-radius: 0.41rem;
+  border: none;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  left: 1.01rem;
+  position: absolute;
+  cursor: pointer;
+}
+.line{
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  border-bottom: none;
+  margin: 0 0.426rem;
+}
+.line .logo{
+  background: url('./img/logo.png') no-repeat center;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.11rem;
+  margin-top: 0.35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.line h1{
+  font-size: 0.48rem;
+  margin-top: 0.25rem;
+  color: #333333;
+  text-align: center;
+}
+.line .illustrate{
+	line-height: 0.64rem;
+  color: #666666;
+  margin: 0 auto;
+  width: 7.84rem;
+  margin-top: 0.49rem;
+}
+.line hr{
+  background-color: #e1e1e1;
+  height:1px ;
+  border: none;
+  margin: 0.3rem 0.64rem 0.53rem 0.64rem;
+}
+/*label更改按钮样式*/
+.radio1 [type='radio']{
+  display: none
+}
+.radio1 label {
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  border: 1px #a0a0a0 solid;
+  background-color: #f2f2f2;
+  vertical-align: text-bottom;
+  cursor: pointer;
+  border-radius: 100%;
+  margin-right: 0.16rem;
+}
+/* .radio1 label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.11rem;
+  margin-left: -0.11rem;
+  width: 0.23rem;
+  height: 0.23rem;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transform: scale(0);
+} */
+.radio1 [type = 'radio']:checked + label {
+    border: .12rem solid #000;
+  }
+  /* .radio1 [type = 'radio']:checked + label:after{
+    transform:scale(1)
+  } */
+  .checkbox1 [type='checkbox']{
+    display: none
+  }
+  .checkbox1 label{
+    display: inline-block;
+    width: 0.453rem;
+    height: 0.453rem;
+    border: 1px #a0a0a0 solid;
+    background-color: #f2f2f2;
+    margin-right:  0.16rem;
+    cursor: pointer;
+    border-radius: 0.053rem;
+    overflow :hidden;
+  }
+  /* .checkbox1 label:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.09rem;
+    margin-left: -0.09rem;
+    width: 0.18rem;
+    height: 0.18rem;
+    background-color: #f2f2f2;
+    transform: scale(0)
+  } */
+  .checkbox1 [type = 'checkbox']:checked + label {
+    border: .12rem solid #000;
+    }
+  /* .checkbox1 [type = 'checkbox']:checked + label:after{
+      transform:scale(1)
+    } */
+.line ol {
+  margin:0 0.64rem 0.53rem 0.64rem;
+}
+.line ol li{
+  margin-bottom: 0.35rem
+}
+.line ol>li>h2 {
+  line-height: 0.64rem;
+  color: #333333;
+}
+.line ol>li>h2>span{
+  color: #c82249;
+}
+.line ol>li {
+  line-height: 0.8rem;
+  margin-top: 0.1rem;
+  color: #333333;
+}
+.line ol>li .mutiLine{
+    width: 7.86rem; 
+    height: 2.4rem; 
+    margin-top: 0.265rem;
+    border:0.027rem solid #a0a0a0;
+    background-color: #e5e5e5;
+    border-radius:0.053rem;
+    padding: 0.2rem 0.41rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.37rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 0.64rem;
+    word-break : break-all;
+    outline: none
+}
+.line ol>li .mutiLine .inputText{
+  line-height: 0.64rem;
+  color: #666666;
+  font-style: 0.37rem;
+}
+.line ol>li .mutiLine .inputText1{
+  display: none
+}
+.line ol li:nth-child(8) input{
+  background-color: #e6e6e6;
+	border-radius: 0.373rem;
+  border: solid 0.027rem #a0a0a0;
+  width: 6.52rem;
+  height: 0.75rem;
+  margin-bottom: 0.12rem;
+  padding:0 0.5rem;
+  vertical-align:top;
+  margin-right: 0;
+  font-size: 0.37rem;
+}
+ol li:nth-child(8){
+  margin-bottom: 0
+}
+.line ol h6{
+  font-size: 0.32rem;
+	color: #666666;
+  opacity: 0.6;
+  text-align: center;
+  margin: 0.15rem 0 0.25rem 0
+}
+.line ol .btn-sub{
+  width: 7.87rem;
+	height: 1.173rem;
+	background-image: linear-gradient(0deg, 
+		#000000 0%, 
+		#323232 100%), 
+	linear-gradient(
+		#000000, 
+		#000000);
+	background-blend-mode: normal, 
+		normal;
+	box-shadow: 0px 1px 2px 0px 
+		rgba(0, 0, 0, 0.65);
+	border-radius: 0.133rem;
+  border: solid 1px #000000;
+  font-size: 0.48rem;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.173rem
+}
+.footPic{
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 1rem;
+}
+.left_2 {
+  left: 0.426rem;
+  transform: rotateX(180deg);
+  
+}
+.right_2 {
+  right: 0.426rem;;
+  transform: rotateY(180deg) rotateX(180deg);
+
+}
+.tips{
+  width: 3.73rem;
+	height: 0.48rem;
+	background-color: #b01f42;
+  border-radius: 0.24rem;
+	line-height: 0.48rem;
+  color: #fff;
+  text-align: center;
+  }
+
+

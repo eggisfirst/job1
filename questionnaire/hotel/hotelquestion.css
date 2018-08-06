@@ -2,30 +2,33 @@
 body{
   font-size: 0.37rem;
   font-family: PingFang-SC-Regular;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
+  outline: none
+}
+.banner{
+  position: relative
 }
 .pic{
   background: url('./img/pic.png') no-repeat center;
   background-size: cover;
   width: 0.56rem;
   height: 0.56rem;
+  position: absolute;
 }
   .left {
-  margin-top: 0.43rem;
-  float: left;
-  margin-left: 0.426rem;
+  top: 0.43rem;
+  left: 0.426rem;
   }
   .right {
-  float: left;
-  margin-top: 0.43rem;
-  margin-right: 0.426rem;;
+  top: 0.43rem;
+  right: 0.426rem;;
   transform: rotateY(180deg);
   }
 .changLanguage{
   position: relative;
   width: 2.96rem;
   height: 0.83rem;
-  margin: 0.43rem 2.53rem 0 2.53rem;
+  margin: 0.43rem 2.53rem 0 3.52rem;
   float: left;
   background-color: #4f4f4f;
   border-radius: 0.41rem;
@@ -125,7 +128,6 @@ body{
 }
 .radio1 label {
   display: inline-block;
-  position: relative;
   width: 0.48rem;
   height: 0.48rem;
   border: 1px #a0a0a0 solid;
@@ -135,26 +137,27 @@ body{
   border-radius: 100%;
   margin-right: 0.16rem;
 }
-.radio1 label:after {
+/* .radio1 label:after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -0.11rem;
-  margin-left: -0.11rem;
-  width: 0.23rem;
-  height: 0.23rem;
+  margin-top: -0.12rem;
+  margin-left: -0.12rem;
+  width: 0.24rem;
+  height: 0.24rem;
   background-color: #f2f2f2;
   border-radius: 50%;
   transform: scale(0);
-}
+} */
 .radio1 [type = 'radio']:checked + label {
-    background-color: #000;
+  border: .12rem solid #000; 
+    /* background-color: #000; */
   }
-  .radio1 [type = 'radio']:checked + label:after{
+  /* .radio1 [type = 'radio']:checked + label:after{
     transform:scale(1)
-  }
-  .checkbox1 [type='checkbox']{
+  } */
+  /* .checkbox1 [type='checkbox']{
     display: none
   }
   .checkbox1 label{
@@ -186,7 +189,7 @@ body{
     }
   .checkbox1 [type = 'checkbox']:checked + label:after{
       transform:scale(1)
-    }
+    } */
 .line ol {
   margin:0 0.64rem 0.53rem 0.64rem;
 }
@@ -219,6 +222,7 @@ body{
     overflow-y: auto;
     line-height: 0.64rem;
     word-break : break-all;
+    outline: none
 }
 .line ol>li .mutiLine .inputText{
   line-height: 0.64rem;
@@ -228,7 +232,7 @@ body{
 .line ol>li .mutiLine .inputText1{
   display: none
 }
-.line ol li:nth-child(8) input{
+.line ol li:nth-child(10) input{
   background-color: #e6e6e6;
 	border-radius: 0.373rem;
   border: solid 0.027rem #a0a0a0;
@@ -240,7 +244,7 @@ body{
   margin-right: 0;
   font-size: 0.37rem;
 }
-ol li:nth-child(8){
+ol li:nth-child(10){
   margin-bottom: 0
 }
 .line ol h6{
@@ -271,21 +275,19 @@ ol li:nth-child(8){
   text-align: center;
   line-height: 1.173rem
 }
+.footPic{
+  position: relative;
+}
 .left_2 {
-  float: left;
-  margin-left: 0.426rem;
+  left: 0.426rem;
   transform: rotateX(180deg);
-  margin-top: -0.2rem;
-  margin-bottom: 0.2rem
+  bottom: -0.2rem;
 }
 .right_2 {
-  float: right;
-  margin-right: 0.426rem;;
+  right: 0.426rem;;
   transform: rotateY(180deg) rotateX(180deg);
-  margin-top: -0.2rem;
-  margin-bottom: 0.2rem
+  bottom: -0.2rem;
 }
-
 .tips{
   width: 3.73rem;
 	height: 0.48rem;

@@ -37,3 +37,9 @@ img {
   clear: both;
   display: block
 }
+button{
+  outline: none
+}
+input{
+  outline: none
+}
