@@ -6,6 +6,10 @@ var topScroll =[]
 changLanguage();
 hideText();
 
+var aa = document.getElementById('tel')
+console.log(aa)
+
+
 //提交表单
 sub.onclick = function () {
   getAttrName();
