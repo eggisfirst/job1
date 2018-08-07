@@ -3,6 +3,9 @@ var input = document.getElementsByTagName('input')
 var arrObj = {}
 var checkedArr = []
 var topScroll =[]
+var phoneNum = document.getElementById('tel')
+var y = true
+
 changLanguage();
 hideText();
 
@@ -85,15 +88,19 @@ sub.onclick = function () {
         window.scrollTo(0,theFirstY)
       } else {
       //当length长度不为0的时候++
-        count += 1
-        $('#' + item).children('.tips').remove()
-      }
+      count += 1
+      $('#' + item).children('.tips').remove()
     }
-    //当length不为0的长度为h2即题目的长度-1时，跳转页面
-    if(count == titleNumber.length - 1){
+  }
+  //当length不为0的长度为h2即题目的长度-1时，跳转页面
+  if(count == titleNumber.length - 1){
+    checkMobile()
+    //手机号码验证正确或者没填，跳转
+    if(y == true || phoneNum.value == ''){
       skip()
     }
   }
+}
 
 //点击跳转页面
   function skip(){
@@ -107,3 +114,14 @@ sub.onclick = function () {
     var adress1 = adress.slice(0,cut)
     location.href = adress1 +'/'+'thanks.html'
   }
+
+  //验证手机号码
+  function checkMobile(){ 
+    if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(phoneNum.value))){ 
+    //  alert("不是完整的11位手机号或者正确的手机号前七位"); 
+    phoneNum.focus(); 
+     y = false
+    }else{
+      y = true
+    }
+   } 
