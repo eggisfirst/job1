@@ -32,6 +32,7 @@ body{
   float: left;
   background-color: #4f4f4f;
   border-radius: 0.41rem;
+ 
 }
 .changLanguage .Chinese-on{
   font-size: 0.3rem;
@@ -58,8 +59,9 @@ body{
   position: absolute;
   left: 1.01rem;
   text-align: right;
-  padding-right: 0.4rem;
+  padding-right: 0.48rem;
   cursor: pointer;
+  
 }
 .changLanguage .Chinese{
   font-size: 0.3rem;
